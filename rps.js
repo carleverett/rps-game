@@ -16,26 +16,26 @@ function playRound(){
     const computerSelection = computerPlay();
 
     if(playerSelection === "rock" && computerSelection === "paper"){
-        console.log("You lose! Paper beats rock."); 
+        alert("You lose! Paper beats rock."); 
         computerScore++;}
     else if(playerSelection === "rock" && computerSelection === "scissors"){
-        console.log("You win! Paper beats scissors."); 
+        alert("You win! Paper beats scissors."); 
         playerScore++;}
     else if(playerSelection === "paper" && computerSelection === "rock"){
-        console.log("You win! Paper beats rock.");
+        alert("You win! Paper beats rock.");
         playerScore++;}
     else if(playerSelection === "paper" && computerSelection === "scissors"){
-        console.log("You lose! Scissors beat paper.");
+        alert("You lose! Scissors beat paper.");
         computerScore++;}
     else if(playerSelection === "scissors" && computerSelection === "rock"){
-        console.log("You lose! Rock beats scissors.");
+        alert("You lose! Rock beats scissors.");
         computerScore++;}
     else if(playerSelection === "scissors" && computerSelection === "paper"){ 
-        console.log("You win! Scissors beat paper.");
+        alert("You win! Scissors beat paper.");
         playerScore++;}
-    else(console.log("No winner. Try again."));
+    else(alert("No winner. Try again."));
 
-    console.log(`Score: Player: ${playerScore}, Computer: ${computerScore}`);
+    alert(`Score: Player: ${playerScore}, Computer: ${computerScore}`);
 }
 
 function game(){
